@@ -390,4 +390,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libgui-shim
 
+# Google Photos
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/pixel/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
+
 include vendor/xiaomi/sweet/sweet-vendor.mk
